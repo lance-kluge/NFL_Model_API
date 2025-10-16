@@ -1,0 +1,109 @@
+season,week,neutral,away,home,score_away,score_home,first_downs_away,first_downs_home,pen_yards_away,pen_yards_home,first_downs_from_penalty_away,first_downs_from_penalty_home,sack_yards_away,sack_yards_home,pass_att_away,pass_att_home
+2025,1,False,Dallas Cowboys,Philadelphia Eagles,20,24,22,20,110,42,6,0,8,0,34,23
+2025,1,True,Kansas City Chiefs,Los Angeles Chargers,21,27,18,22,49,71,1,0,14,9,39,34
+2025,1,False,Tampa Bay Buccaneers,Atlanta Falcons,23,20,16,23,55,60,1,3,9,8,32,42
+2025,1,False,Cincinnati Bengals,Cleveland Browns,17,16,11,22,53,33,1,4,12,18,23,45
+2025,1,False,Miami Dolphins,Indianapolis Colts,8,33,12,27,45,15,0,2,10,13,31,29
+2025,1,False,Las Vegas Raiders,New England Patriots,20,13,21,18,70,77,1,1,11,29,34,46
+2025,1,False,Arizona Cardinals,New Orleans Saints,20,13,19,21,89,54,3,4,6,33,29,46
+2025,1,False,Pittsburgh Steelers,New York Jets,34,32,19,23,74,26,3,1,6,26,30,22
+2025,1,False,New York Giants,Washington Commanders,6,21,17,25,89,35,4,3,21,11,37,30
+2025,1,False,Carolina Panthers,Jacksonville Jaguars,10,26,15,19,93,35,2,0,0,12,35,31
+2025,1,False,Tennessee Titans,Denver Broncos,12,20,7,20,45,131,0,6,10,50,28,40
+2025,1,False,San Francisco 49ers,Seattle Seahawks,17,13,24,14,30,61,2,2,4,12,35,23
+2025,1,False,Detroit Lions,Green Bay Packers,13,27,16,14,40,40,1,2,0,25,39,22
+2025,1,False,Houston Texans,Los Angeles Rams,9,14,18,18,60,80,3,2,21,37,27,29
+2025,1,False,Baltimore Ravens,Buffalo Bills,40,41,19,29,38,51,1,2,5,15,19,46
+2025,1,False,Minnesota Vikings,Chicago Bears,27,24,14,20,127,50,3,3,12,9,20,35
+2025,2,False,Washington Commanders,Green Bay Packers,18,27,15,22,77,30,2,2,23,21,42,31
+2025,2,False,Jacksonville Jaguars,Cincinnati Bengals,27,31,21,24,29,55,1,2,15,10,42,45
+2025,2,False,New York Giants,Dallas Cowboys,37,40,22,32,106,160,1,6,18,28,41,52
+2025,2,False,Chicago Bears,Detroit Lions,21,52,19,25,28,50,1,0,0,29,33,28
+2025,2,False,Los Angeles Rams,Tennessee Titans,33,19,22,18,62,29,2,1,32,8,33,33
+2025,2,False,New England Patriots,Miami Dolphins,33,27,18,16,65,75,1,0,18,19,23,32
+2025,2,False,San Francisco 49ers,New Orleans Saints,26,21,23,21,45,40,3,3,21,12,39,34
+2025,2,False,Buffalo Bills,New York Jets,30,10,25,11,35,69,4,1,29,1,27,22
+2025,2,False,Seattle Seahawks,Pittsburgh Steelers,31,17,21,13,15,10,0,1,20,17,33,35
+2025,2,False,Cleveland Browns,Baltimore Ravens,17,41,17,14,28,42,0,2,28,11,48,29
+2025,2,False,Denver Broncos,Indianapolis Colts,28,29,23,26,68,83,5,4,10,0,30,34
+2025,2,False,Carolina Panthers,Arizona Cardinals,22,27,26,16,96,83,3,1,9,25,55,25
+2025,2,False,Philadelphia Eagles,Kansas City Chiefs,20,17,16,17,45,48,3,1,14,7,22,29
+2025,2,False,Atlanta Falcons,Minnesota Vikings,22,6,19,10,50,29,2,0,38,27,21,21
+2025,2,False,Tampa Bay Buccaneers,Houston Texans,20,19,25,12,45,45,4,2,25,24,38,24
+2025,2,False,Los Angeles Chargers,Las Vegas Raiders,20,9,15,15,47,33,1,2,30,6,27,43
+2025,3,False,Miami Dolphins,Buffalo Bills,21,31,19,23,35,57,0,3,10,0,34,28
+2025,3,False,Green Bay Packers,Cleveland Browns,10,13,14,15,90,75,2,3,17,34,25,36
+2025,3,False,Indianapolis Colts,Tennessee Titans,41,20,22,21,68,23,3,2,23,0,25,38
+2025,3,False,Cincinnati Bengals,Minnesota Vikings,10,48,12,22,105,45,3,2,19,22,27,24
+2025,3,False,Pittsburgh Steelers,New England Patriots,21,14,17,26,54,59,5,3,18,0,23,37
+2025,3,False,Los Angeles Rams,Philadelphia Eagles,26,33,22,19,50,41,1,2,24,0,34,32
+2025,3,False,New York Jets,Tampa Bay Buccaneers,27,29,21,19,124,81,3,3,8,29,36,29
+2025,3,False,Las Vegas Raiders,Washington Commanders,24,41,17,17,54,54,0,2,8,28,29,21
+2025,3,False,Atlanta Falcons,Carolina Panthers,0,30,17,15,55,23,0,1,7,0,43,24
+2025,3,False,Houston Texans,Jacksonville Jaguars,10,17,13,17,70,66,3,2,17,20,38,40
+2025,3,False,Denver Broncos,Los Angeles Chargers,20,23,9,29,25,90,1,6,30,6,25,47
+2025,3,False,New Orleans Saints,Seattle Seahawks,13,44,21,22,70,77,5,4,0,13,41,21
+2025,3,False,Dallas Cowboys,Chicago Bears,14,31,23,19,41,25,3,1,0,17,45,28
+2025,3,False,Arizona Cardinals,San Francisco 49ers,15,16,16,19,69,30,1,1,2,5,35,41
+2025,3,False,Kansas City Chiefs,New York Giants,22,9,22,19,82,85,3,4,9,23,37,32
+2025,3,False,Detroit Lions,Baltimore Ravens,38,30,24,21,10,68,1,3,55,0,28,28
+2025,4,False,Seattle Seahawks,Arizona Cardinals,23,20,20,18,46,74,3,3,36,13,26,41
+2025,4,True,Minnesota Vikings,Pittsburgh Steelers,21,24,23,19,35,82,2,2,18,48,46,22
+2025,4,False,Washington Commanders,Atlanta Falcons,27,34,17,24,45,50,2,1,6,9,27,26
+2025,4,False,New Orleans Saints,Buffalo Bills,19,31,22,20,55,41,1,1,18,17,28,22
+2025,4,False,Cleveland Browns,Detroit Lions,10,34,16,16,35,44,1,2,0,14,35,27
+2025,4,False,Carolina Panthers,New England Patriots,13,42,21,16,54,29,2,1,0,11,36,18
+2025,4,False,Los Angeles Chargers,New York Giants,18,21,17,20,43,107,3,3,30,17,41,21
+2025,4,False,Philadelphia Eagles,Tampa Bay Buccaneers,31,25,16,18,40,83,1,6,17,18,24,40
+2025,4,False,Tennessee Titans,Houston Texans,0,26,10,20,50,35,2,1,9,15,26,28
+2025,4,False,Indianapolis Colts,Los Angeles Rams,20,27,17,24,63,88,2,2,15,14,33,41
+2025,4,False,Jacksonville Jaguars,San Francisco 49ers,26,21,18,22,54,90,2,2,3,0,31,38
+2025,4,False,Baltimore Ravens,Kansas City Chiefs,20,37,18,24,40,56,1,1,6,5,33,37
+2025,4,False,Chicago Bears,Las Vegas Raiders,25,24,16,17,36,60,1,1,0,10,37,21
+2025,4,False,Green Bay Packers,Dallas Cowboys,40,40,32,26,95,53,5,1,0,12,43,40
+2025,4,False,New York Jets,Miami Dolphins,21,27,23,19,40,101,2,2,0,19,27,25
+2025,4,False,Cincinnati Bengals,Denver Broncos,3,28,9,29,72,65,3,1,0,19,25,42
+2025,5,False,San Francisco 49ers,Los Angeles Rams,26,23,27,27,36,44,2,4,11,9,49,47
+2025,5,True,Minnesota Vikings,Cleveland Browns,21,17,20,17,78,50,2,0,8,16,35,33
+2025,5,False,Las Vegas Raiders,Indianapolis Colts,6,40,22,24,77,65,4,3,0,38,36,32
+2025,5,False,New York Giants,New Orleans Saints,14,26,23,18,43,95,2,3,0,3,40,32
+2025,5,False,Dallas Cowboys,New York Jets,37,22,22,25,61,91,1,2,49,1,29,46
+2025,5,False,Denver Broncos,Philadelphia Eagles,21,17,23,16,55,121,3,3,23,14,39,38
+2025,5,False,Miami Dolphins,Carolina Panthers,24,27,15,26,46,64,0,6,19,27,36,30
+2025,5,False,Houston Texans,Baltimore Ravens,44,10,27,12,49,26,4,1,16,17,31,20
+2025,5,False,Tennessee Titans,Arizona Cardinals,22,21,20,16,47,35,2,1,28,16,39,32
+2025,5,False,Tampa Bay Buccaneers,Seattle Seahawks,38,35,25,27,56,37,2,3,0,9,33,34
+2025,5,False,Detroit Lions,Cincinnati Bengals,37,24,23,21,30,56,1,5,14,14,24,40
+2025,5,False,Washington Commanders,Los Angeles Chargers,27,10,22,18,85,48,4,1,29,5,26,33
+2025,5,False,New England Patriots,Buffalo Bills,23,20,21,25,90,93,3,4,8,6,30,31
+2025,5,False,Kansas City Chiefs,Jacksonville Jaguars,28,31,26,21,25,109,0,4,11,0,41,25
+2025,6,False,Philadelphia Eagles,New York Giants,17,34,20,25,55,46,1,3,1,17,33,26
+2025,6,True,Denver Broncos,New York Jets,13,11,12,8,15,37,0,0,55,6,30,17
+2025,6,False,Arizona Cardinals,Indianapolis Colts,27,31,25,25,40,65,1,1,7,8,44,30
+2025,6,False,Los Angeles Chargers,Miami Dolphins,29,27,20,19,45,45,1,2,9,1,38,33
+2025,6,False,New England Patriots,New Orleans Saints,25,19,19,17,67,65,2,3,4,1,26,26
+2025,6,False,Cleveland Browns,Pittsburgh Steelers,9,23,20,19,59,44,4,1,0,38,52,30
+2025,6,False,Dallas Cowboys,Carolina Panthers,27,30,15,27,57,37,2,2,5,0,34,25
+2025,6,False,Seattle Seahawks,Jacksonville Jaguars,20,12,13,17,76,56,1,1,44,9,27,42
+2025,6,False,Los Angeles Rams,Baltimore Ravens,17,3,15,19,80,40,1,2,23,14,26,34
+2025,6,False,Tennessee Titans,Las Vegas Raiders,10,20,15,16,27,34,1,3,16,62,38,23
+2025,6,False,Cincinnati Bengals,Green Bay Packers,18,27,20,24,40,17,3,1,3,6,45,26
+2025,6,False,San Francisco 49ers,Tampa Bay Buccaneers,19,30,17,19,31,65,1,1,8,51,39,23
+2025,6,False,Detroit Lions,Kansas City Chiefs,17,30,18,26,0,38,0,2,14,4,29,30
+2025,6,False,Buffalo Bills,Atlanta Falcons,14,24,17,22,35,64,2,3,17,23,26,32
+2025,6,False,Chicago Bears,Washington Commanders,25,24,19,22,40,84,1,4,6,16,29,26
+2025,7,False,Pittsburgh Steelers,Cincinnati Bengals,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,True,Los Angeles Rams,Jacksonville Jaguars,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,New Orleans Saints,Chicago Bears,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,Miami Dolphins,Cleveland Browns,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,New England Patriots,Tennessee Titans,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,Las Vegas Raiders,Kansas City Chiefs,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,Philadelphia Eagles,Minnesota Vikings,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,Carolina Panthers,New York Jets,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,New York Giants,Denver Broncos,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,Indianapolis Colts,Los Angeles Chargers,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,Washington Commanders,Dallas Cowboys,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,Green Bay Packers,Arizona Cardinals,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,Atlanta Falcons,San Francisco 49ers,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,Tampa Bay Buccaneers,Detroit Lions,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,False,Houston Texans,Seattle Seahawks,0,0,0,0,0,0,0,0,0,0,0,0
