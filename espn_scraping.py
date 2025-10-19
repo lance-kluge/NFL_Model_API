@@ -155,8 +155,8 @@ def build_team_stat_row(event, week, season):
         "first_downs_from_penalty_away": get_stat(away_team, "firstDownsPenalty"),
         "first_downs_from_penalty_home": get_stat(home_team, "firstDownsPenalty"),
 
-        "sack_yards_away": home_sack_yards,
-        "sack_yards_home": away_sack_yards,
+        "sacks_yards_away": home_sack_yards,
+        "sacks_yards_home": away_sack_yards,
 
         "pass_att_away": away_att,
         "pass_att_home": home_att,
