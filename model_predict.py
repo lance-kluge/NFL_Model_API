@@ -38,7 +38,7 @@ def predict(df, model, feature_cols):
             print('found col not in df.columns')
 
     X = df[feature_cols].fillna(0)
-    preds = model.predict_proba(X)[:, 1]  # assuming binary win probability
+    preds = model.predict_proba(X)[:, 1]
     df["win_probability"] = preds
     df["prediction_generated_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return df
