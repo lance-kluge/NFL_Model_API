@@ -1,0 +1,9 @@
+[
+    "score_diff",
+    "points_allowed_diff",
+    "pass_att_diff",
+    "pen_yards_diff",
+    "first_downs_diff",
+    "sacks_yards_diff",
+    "first_downs_from_penalty_diff"
+]
