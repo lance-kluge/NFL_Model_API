@@ -2,15 +2,31 @@ from fastapi import FastAPI
 import pandas as pd
 import datetime
 import os
+import logging
+from espn_scraping import scrape_full_current_season
+from model_predict import main as run_model
 
 app = FastAPI(title="NFL Prediction API", version="1.0")
 
 PREDICTIONS_FILE = "predictions_latest.csv"
 
+
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+
 @app.get("/")
 def root():
     return {"message": "NFL Model API is running!"}
 
+
+def weekly_job():
+    logging.info("Starting scheduled job: scrape and then predict")
+    try:
+        scrape_full_current_season()
+        run_model()
+        logging.info("Weekly job complete")
+    except Exception as e:
+        logging.error(f"Error in scheduled job: {e}")
 
 @app.get("/predictions")
 def get_predictions():
@@ -42,3 +58,9 @@ def get_predictions():
         "games": output,
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
+
+
+@app.post("/run-now")
+def run_now():
+    weekly_job()
+    return {"status": "Job triggered manually"}
