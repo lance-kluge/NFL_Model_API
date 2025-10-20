@@ -19,7 +19,6 @@ def get_week_games(season, week):
 
     if resp.status_code != 200:
         return None
-    print("got data for week")
     data = resp.json()
     if not data.get("events"):
         return None
