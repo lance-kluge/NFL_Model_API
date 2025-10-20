@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, BackgroundTasks
 import pandas as pd
 import datetime
 import os
@@ -61,6 +61,9 @@ def get_predictions():
 
 
 @app.post("/run-now")
-def run_now():
-    weekly_job()
-    return {"status": "Job triggered manually"}
+def run_now(background_tasks: BackgroundTasks):
+    background_tasks.add_task(weekly_job)
+    return {
+        "status": "Pipeline started in background",
+        "started_at": datetime.datetime.now().isoformat()
+    }
