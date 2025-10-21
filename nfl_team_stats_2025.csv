@@ -93,17 +93,17 @@ season,week,neutral,away,home,score_away,score_home,first_downs_away,first_downs
 2025,6,False,Buffalo Bills,Atlanta Falcons,14,24,17,22,35,64,2,3,17,23,26,32
 2025,6,False,Chicago Bears,Washington Commanders,25,24,19,22,40,84,1,4,6,16,29,26
 2025,7,False,Pittsburgh Steelers,Cincinnati Bengals,31,33,19,27,35,59,0,3,14,0,34,47
-2025,7,True,Los Angeles Rams,Jacksonville Jaguars,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,New Orleans Saints,Chicago Bears,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,Miami Dolphins,Cleveland Browns,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,New England Patriots,Tennessee Titans,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,Las Vegas Raiders,Kansas City Chiefs,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,Philadelphia Eagles,Minnesota Vikings,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,Carolina Panthers,New York Jets,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,New York Giants,Denver Broncos,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,Indianapolis Colts,Los Angeles Chargers,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,Washington Commanders,Dallas Cowboys,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,Green Bay Packers,Arizona Cardinals,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,Atlanta Falcons,San Francisco 49ers,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,Tampa Bay Buccaneers,Detroit Lions,0,0,0,0,0,0,0,0,0,0,0,0
-2025,7,False,Houston Texans,Seattle Seahawks,0,0,0,0,0,0,0,0,0,0,0,0
+2025,7,True,Los Angeles Rams,Jacksonville Jaguars,35,7,26,21,119,45,8,3,32,0,33,48
+2025,7,False,New Orleans Saints,Chicago Bears,14,26,16,23,92,30,4,0,8,24,32,26
+2025,7,False,Miami Dolphins,Cleveland Browns,6,31,12,15,37,103,2,4,14,33,31,18
+2025,7,False,New England Patriots,Tennessee Titans,31,13,22,16,15,36,0,1,39,22,24,34
+2025,7,False,Las Vegas Raiders,Kansas City Chiefs,0,31,3,30,38,58,1,2,4,5,18,35
+2025,7,False,Philadelphia Eagles,Minnesota Vikings,28,22,13,21,30,64,0,1,15,10,23,42
+2025,7,False,Carolina Panthers,New York Jets,13,6,17,12,26,45,0,1,33,21,32,34
+2025,7,False,New York Giants,Denver Broncos,32,33,26,25,127,36,7,2,14,15,33,50
+2025,7,False,Indianapolis Colts,Los Angeles Chargers,38,24,24,25,35,42,1,2,29,7,34,55
+2025,7,False,Washington Commanders,Dallas Cowboys,22,44,18,21,79,118,2,3,7,14,32,30
+2025,7,False,Green Bay Packers,Arizona Cardinals,27,23,19,23,55,94,4,5,43,11,29,36
+2025,7,False,Atlanta Falcons,San Francisco 49ers,10,20,19,23,25,43,3,1,2,11,38,26
+2025,7,False,Tampa Bay Buccaneers,Detroit Lions,9,24,15,17,50,35,2,2,26,18,50,29
+2025,7,False,Houston Texans,Seattle Seahawks,19,27,18,19,93,105,4,4,15,31,49,32
