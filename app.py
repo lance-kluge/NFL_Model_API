@@ -12,7 +12,7 @@ PREDICTIONS_FILE = "predictions_latest.csv"
 
 
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.WARNING, format="%(asctime)s - %(levelname)s - %(message)s")
 
 @app.get("/")
 def root():
