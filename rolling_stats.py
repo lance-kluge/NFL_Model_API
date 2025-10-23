@@ -9,6 +9,7 @@ def add_rolling_features(df):
 
     X['points_allowed_home'] = X['score_away']
     X['points_allowed_away'] = X['score_home']
+    X["home_win"] = (np.where((X["score_home"] == 0) & (X["score_away"] == 0), -1, np.where(X["score_home"] > X["score_away"], 1, 0)))
 
     X.loc[:,'week'] = pd.to_numeric(X['week'], errors='coerce')
     X = X.dropna(subset=['week'])
@@ -17,8 +18,8 @@ def add_rolling_features(df):
     home_cols = [col for col in X.columns if col.endswith('_home')]
     away_cols = [col for col in X.columns if col.endswith('_away')]
 
-    home_df = X[['season', 'week', 'game_id', 'home'] + home_cols].copy()
-    away_df = X[['season', 'week', 'game_id', 'away'] + away_cols].copy()
+    home_df = X[['season', 'week', 'game_id', 'home', 'home_win'] + home_cols].copy()
+    away_df = X[['season', 'week', 'game_id', 'away', 'home_win'] + away_cols].copy()
 
     home_df = home_df.rename(columns=lambda x: x.replace('_home', '') if x.endswith('_home') else x)
     away_df = away_df.rename(columns=lambda x: x.replace('_away', '') if x.endswith('_away') else x)
@@ -29,7 +30,7 @@ def add_rolling_features(df):
     long_X = pd.concat([home_df, away_df], ignore_index=True)
     long_X = long_X.sort_values(by =['season', 'team', 'week'])
 
-    stat_cols = [col for col in long_X.columns if col not in ['season', 'week', 'team', 'game_id']]
+    stat_cols = [col for col in long_X.columns if col not in ['season', 'week', 'team', 'game_id', 'home_win']]
 
     #rolling average, shifted by one so all we know are the stats leading up to that game for the current season averages.
     rolling_avg = (
@@ -39,7 +40,7 @@ def add_rolling_features(df):
     )
 
     long_X = long_X.sort_values(by=['season', 'team', 'week'])
-    rolling_X = pd.concat([long_X[['season', 'week', 'team', 'game_id']], rolling_avg], axis=1)
+    rolling_X = pd.concat([long_X[['season', 'week', 'team', 'game_id', 'home_win']], rolling_avg], axis=1)
 
     #merge the two df back together and label to be able to tell which team was the home team
     home_stats = rolling_X.merge(X[['game_id', 'home']], left_on=['game_id', 'team'], right_on=['game_id', 'home'])
@@ -56,9 +57,9 @@ def add_rolling_features(df):
     final_X = final_X[final_X['week_home'] > 1].copy()
 
     final_X['week'] = final_X['week_home']
-    final_X['week'] = final_X['week_home']
     final_X['season'] = final_X['season_home']
-    final_X = final_X.drop(['season_home', 'week_home', 'home_home', 'season_away', 'week_away', 'away_away'], axis =1)
+    final_X['home_win'] = final_X['home_win_home']
+    final_X = final_X.drop(['season_home', 'week_home', 'home_home', 'season_away', 'week_away', 'away_away', 'home_win_home', 'home_win_away'], axis =1)
 
     home_cols = [c for c in final_X.columns if c.endswith("_home")]
     away_cols = [c for c in final_X.columns if c.endswith("_away")]
@@ -76,9 +77,9 @@ def add_rolling_features(df):
         base = h.replace("_home", "")
         diff_col = f"{base}_diff"
         final_X[diff_col] = final_X[h] - final_X[a]
-
     #keep only the cols that are the difference cols and identifiers like week, season and ofc our y in home_win 
     diff_cols = [c for c in final_X.columns if c.endswith("_diff")]
-    X2 = final_X[diff_cols + ['week', 'season', 'team_home', 'team_away']]
+    X2 = final_X[diff_cols + ['week', 'season', 'team_home', 'team_away', 'home_win']]
     
+    print(X2.columns)
     return X2

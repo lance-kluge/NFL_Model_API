@@ -37,7 +37,7 @@ def get_predictions():
     df = pd.read_csv(PREDICTIONS_FILE)
 
     # Ensure required columns exist
-    required_cols = ["team_home", "team_away", "week", "season", "win_probability"]
+    required_cols = ["team_home", "team_away", "week", "season", "win_probability", "home_win"]
     for col in required_cols:
         if col not in df.columns:
             return {"error": f"Missing column in CSV: {col}"}
@@ -50,7 +50,7 @@ def get_predictions():
     this_week = df[(df["week"] == current_week) & (df["season"] == current_season)]
 
     # Select key columns
-    output = this_week[["team_home", "team_away", "win_probability"]].to_dict(orient="records")
+    output = this_week[["team_home", "team_away", "win_probability", "home_win"]].to_dict(orient="records")
 
     return {
         "season": int(current_season),
@@ -59,6 +59,41 @@ def get_predictions():
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
 
+
+@app.get("/predictions-week")
+def get_predictions_week(week: int):
+    """Return predictions for a specific week in the current season"""
+    if not os.path.exists(PREDICTIONS_FILE):
+        return {"error": "Predictions file not found."}
+
+    df = pd.read_csv(PREDICTIONS_FILE)
+
+    # Ensure required columns exist
+    required_cols = ["team_home", "team_away", "week", "season", "win_probability", "home_win"]
+    for col in required_cols:
+        if col not in df.columns:
+            return {"error": f"Missing column in CSV: {col}"}
+
+    # Determine the current season
+    current_season = df["season"].max()
+
+    # Filter for given week and current season
+    week_data = df[(df["week"] == week) & (df["season"] == current_season)]
+
+    if week_data.empty:
+        return {
+            "error": f"No data found for week {week} in season {current_season}."
+        }
+
+    # Select key columns
+    output = week_data[["team_home", "team_away", "win_probability", "home_win"]].to_dict(orient="records")
+
+    return {
+        "season": int(current_season),
+        "week": int(week),
+        "games": output,
+        "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
 
 @app.post("/run-now")
 def run_now(background_tasks: BackgroundTasks):
