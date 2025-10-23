@@ -106,7 +106,7 @@ def get_prediction_record():
 
     required_cols = [
         "team_home", "team_away", "week", "season",
-        "win_probability", "score_home", "score_away", 'home_win'
+        "win_probability", 'home_win'
     ]
     for col in required_cols:
         if col not in df.columns:
