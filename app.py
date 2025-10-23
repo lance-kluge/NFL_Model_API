@@ -95,6 +95,48 @@ def get_predictions_week(week: int):
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
 
+
+@app.get("/prediction-record")
+def get_prediction_record():
+    """Calculate model's prediction accuracy (for completed games only)."""
+    if not os.path.exists(PREDICTIONS_FILE):
+        return {"error": "Predictions file not found."}
+
+    df = pd.read_csv(PREDICTIONS_FILE)
+
+    required_cols = [
+        "team_home", "team_away", "week", "season",
+        "win_probability", "score_home", "score_away", 'home_win'
+    ]
+    for col in required_cols:
+        if col not in df.columns:
+            return {"error": f"Missing column in CSV: {col}"}
+
+    # --- Filter to completed games ---
+    completed = df[df["home_win"] != -1].copy()
+
+    if completed.empty:
+        return {"message": "No completed games available to evaluate."}
+
+    # --- Determine predicted winners ---
+    completed["predicted_home_win"] = (completed["win_probability"] > 0.51).astype(int)
+
+    # --- Compare predictions to results ---
+    completed["correct"] = (completed["predicted_home_win"] == completed["home_win"]).astype(int)
+
+    total_games = len(completed)
+    correct_games = completed["correct"].sum()
+    accuracy = correct_games / total_games if total_games > 0 else 0
+
+    return {
+        "season": int(completed["season"].max()),
+        "total_games_evaluated": int(total_games),
+        "correct_predictions": int(correct_games),
+        "accuracy": round(accuracy, 3),
+        "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
+
+
 @app.post("/run-now")
 def run_now(background_tasks: BackgroundTasks):
     background_tasks.add_task(weekly_job)
